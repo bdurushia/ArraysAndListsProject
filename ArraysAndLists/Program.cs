@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ArraysAndLists
 {
@@ -23,16 +24,16 @@ namespace ArraysAndLists
              * Name the list "odds"
              */
             List<int> odds = new List<int>();
-            
 
-             /* Using either a foreach or for loop,
-             * iterate through the array you populated with 10 numbers.
-             * Inside the scope of the loop,
-             * check to see if each number in the array is even or odd.
-             * If the number is even, add it to the evens list.
-             * If the number is odd, add it to the odds list.
-             */
-             foreach (int number in numbers)
+
+            /* Using either a foreach or for loop,
+            * iterate through the array you populated with 10 numbers.
+            * Inside the scope of the loop,
+            * check to see if each number in the array is even or odd.
+            * If the number is even, add it to the evens list.
+            * If the number is odd, add it to the odds list.
+            */
+            foreach (int number in numbers)
             {
                 if (number % 2 == 0)
                 {
@@ -56,9 +57,9 @@ namespace ArraysAndLists
             /* Using a for loop,
              * display the numbers in your "odds" list
              */
-            foreach (int number in odds)
+            for (int i = 0; i < odds.Count(); i++)
             {
-                Console.WriteLine(number);
+                Console.WriteLine(odds[i]);
             }
         }
     }
